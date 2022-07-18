@@ -29,4 +29,13 @@ private val LightColours = lightColors(
     onError = Color.White
 )
 
-private val DarkColours = darkColors()
+private val DarkColours = darkColors(
+    primary = Red300,
+    primaryVariant = Red700,
+    background = Color.Black,
+    secondary = Red300,
+    surface = Color.Black,
+    error = Red200,
+    onSurface = Color.White,
+    onBackground = Color.White
+)

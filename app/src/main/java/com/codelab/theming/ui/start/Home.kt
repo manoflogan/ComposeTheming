@@ -206,7 +206,7 @@ fun PostItem(
 
 @Preview("Post Item")
 @Composable
-private fun PostItemPreview() {
+fun PostItemPreview() {
     val post = remember { PostRepo.getFeaturedPost() }
     Surface {
         PostItem(post = post)
@@ -215,9 +215,18 @@ private fun PostItemPreview() {
 
 @Preview("Featured Post")
 @Composable
-private fun FeaturedPostPreview() {
+fun FeaturedPostPreview() {
     val post = remember { PostRepo.getFeaturedPost() }
     JetnewsTheme {
+        FeaturedPost(post = post)
+    }
+}
+
+@Preview("Featured Post Dark")
+@Composable
+fun FeaturedPostPreviewInDarkTheme() {
+    val post = remember { PostRepo.getFeaturedPost() }
+    JetnewsTheme(isDarkTheme = true) {
         FeaturedPost(post = post)
     }
 }

@@ -15,8 +15,8 @@ private val MontSerrat = FontFamily(
 )
 
 private val Domine = FontFamily(
-    Font(R.font.domine_regular),
-    Font(R.font.domine_bold)
+    Font(R.font.domine_regular, FontWeight.Normal),
+    Font(R.font.domine_bold, FontWeight.Bold)
 )
 
 val JetnewsTypography = Typography(
